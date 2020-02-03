@@ -1,0 +1,33 @@
+<div class="body">
+<img src="../../../assets/WCS.jpg" alt="logo" (click)="goHome()">
+<div class="page-container">
+  <mat-card>
+    <div class="form-container">
+      <h3>Connexion</h3>
+      <form [formGroup]="signInForm">
+        <div class="example-container">
+
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput  type="email" formControlName='email' />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Mot de passe</mat-label>
+            <input matInput  type="password" formControlName='password' />
+
+          </mat-form-field>
+
+          <div class="container">
+            <button mat-flat-button class="validate-button" type="submit"  (click)="connexion(signInForm.value)">Se connecter</button>
+          </div>
+          <!-- [disabled]="!signInForm.valid" -->
+        </div>
+      </form>
+      <div>
+        <a routerLink="/inscription">Vous êtes nouveau ?</a>
+      </div>
+    </div>
+  </mat-card>
+</div>
+</div>

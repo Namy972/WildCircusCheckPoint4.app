@@ -1,0 +1,23 @@
+<div class="form-container" id="contact">
+<h2>Contactez-nous</h2>
+<mat-card>
+  <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+    <div class="example-container">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" type="email" formControlName='email' />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Message</mat-label>
+        <textarea matInput placeholder="Votre message" formControlName='content'>
+        </textarea>
+      </mat-form-field>
+
+      <div class="container">
+        <button mat-flat-button class="validate-button" type="submit" [disabled]="!messageForm.valid">Envoyer</button>
+      </div>
+    </div>
+  </form>
+</mat-card>
+</div>

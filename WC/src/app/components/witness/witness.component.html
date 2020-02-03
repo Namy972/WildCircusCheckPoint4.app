@@ -1,0 +1,13 @@
+<div id="temoin">
+  <h2>Vos avis</h2>
+  <div class="temoignages-container" >
+    <div *ngFor="let temoignage of temoignages" >
+      <mat-card>
+      <div class="temoignage">
+        <p class="content">{{temoignage.content}}</p>
+        <div class="note">{{temoignage.note}}/5</div>
+      </div>
+    </mat-card>
+    </div>
+  </div>
+</div>

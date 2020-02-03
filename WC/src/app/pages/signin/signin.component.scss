@@ -1,0 +1,43 @@
+.body{
+
+  background-color: rgb(193, 75, 75);
+}
+.page-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+.mat-card{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  color: white;
+  a{
+    color: white;
+  }
+}
+
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+}
+.example-container{
+  display: flex;
+  flex-direction: column;
+}
+img{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  height: 100px;
+  width: 100px;
+}
+img:hover{
+  transform: scale(1.1);
+}
